@@ -172,7 +172,6 @@ document.addEventListener('DOMContentLoaded', function () {
   var lightboxSpecs = document.getElementById('lightboxSpecs');
   var lightboxPrice = document.getElementById('lightboxPrice');
   var lightboxClose = document.getElementById('lightboxClose');
-  var lightboxCartBtn = document.getElementById('lightboxCartBtn');
   var lightboxWhatsappBtn = document.getElementById('lightboxWhatsappBtn');
   function openLightbox(item) {
     var img = item.querySelector('img');
