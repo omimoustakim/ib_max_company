@@ -1,0 +1,18 @@
+# Netlify Redirects
+# https://docs.netlify.com/routing/redirects/
+
+# Force HTTPS (Netlify does this automatically, but explicit is good)
+http://ibmaxcompany.netlify.app/*  https://ibmaxcompany.netlify.app/:splat  301!
+
+# Custom domain (if configured)
+http://ibmaxcompany.com/*  https://ibmaxcompany.netlify.app/:splat  301!
+https://ibmaxcompany.com/*  https://ibmaxcompany.netlify.app/:splat  301!
+
+# Trailing slash normalization
+/*/  /:splat  301!
+
+# Legacy/old URLs if any
+/ancienne-page  /  301
+
+# SPA fallback (not needed for static site, but safe)
+/*  /index.html  200

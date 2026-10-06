@@ -1,0 +1,21 @@
+{
+  "name": "IB MAX COMPANY",
+  "short_name": "IB MAX",
+  "description": "Smartphones, ordinateurs, audio et accessoires neufs ou reconditionnés à Lomé. Garantie 14 jours, livraison au Togo.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fafaf5",
+  "theme_color": "#c8f04a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "images/ibmax-hero.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["shopping", "business"],
+  "lang": "fr",
+  "dir": "ltr"
+}
