@@ -87,7 +87,7 @@
           <ul class="spec-chips">${chips}</ul>
           <div class="product-actions">
             <button type="button" class="button button-outline" data-open="${esc(p.id)}">Détails</button>
-            <a class="button button-primary" href="${waLink(msg)}" target="_blank" rel="noopener">💬 Dispo ?</a>
+            <a class="button button-primary" href="${waLink(msg)}" target="_blank" rel="noopener"><i class="bi bi-whatsapp" aria-hidden="true"></i> Dispo ?</a>
           </div>
         </div>
       </article>`;
@@ -180,7 +180,7 @@
     waLinkEl.href = waLink(msg);
     waLinkEl.target = '_blank';
     waLinkEl.rel = 'noopener noreferrer';
-    waLinkEl.textContent = '💬 Demander la disponibilité';
+    waLinkEl.innerHTML = '<i class="bi bi-whatsapp" aria-hidden="true"></i> Demander la disponibilité';
     body.appendChild(waLinkEl);
     
     const noteP = document.createElement('p');

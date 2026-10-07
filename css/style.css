@@ -1337,3 +1337,22 @@ input, textarea { font: inherit; }
 .deal-ribbon { position: absolute; z-index: 3; top: 0; right: 0; padding: .4rem .8rem; border-radius: 0 0 0 10px; background: var(--secondary); color: #fff; font-size: .68rem; font-weight: 900; }
 .nav-deals { color: var(--secondary); }
 @media (max-width: 767px) { .deals-section { padding: 4rem 0 3rem; } .deal-ribbon { font-size: .6rem; padding: .3rem .55rem; } }
+
+/* Catalogue mobile : cartes compactes en deux colonnes pour éviter une liste interminable. */
+@media (max-width: 767px) {
+  .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; }
+  .product-card { min-width: 0; }
+  .product-card .product-visual { aspect-ratio: 1.15 / 1; }
+  .product-card .product-info { padding: .65rem; }
+  .product-card .product-info h3 { font-size: .84rem; line-height: 1.2; overflow-wrap: anywhere; }
+  .product-card .product-tagline { display: none; }
+  .product-card .product-meta { gap: .15rem; }
+  .product-card .product-category,
+  .product-card .condition-pill { font-size: .55rem; }
+  .product-card .spec-chips { gap: .25rem; margin-bottom: .65rem; }
+  .product-card .spec-chips li { padding: .2rem .4rem; font-size: .58rem; }
+  .product-card .product-actions { flex-direction: row; gap: .35rem; }
+  .product-card .product-actions .button { min-width: 0; min-height: 38px; padding: .35rem .3rem; font-size: .68rem; }
+  .filter-row { flex-wrap: nowrap; overflow-x: auto; overscroll-behavior-inline: contain; padding-bottom: .35rem; }
+  .filter-button { flex: 0 0 auto; }
+}

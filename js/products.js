@@ -14,7 +14,7 @@ window.IBMAX_PRODUCTS = [
     badge: "Neuf",
     featured: true,
     priceTier: 1,
-    images: ["images/ibmax-phones.jpg", "images/crops/iphone-face.jpg", "images/crops/iphone-dos.jpg", "images/crops/iphone-vert.jpg"],
+    images: ["images/catalogue-phones/apple/iphone-15-pro.jpg"],
     tagline: "Le haut de gamme Apple, en titane, avec USB-C.",
     chips: ["Puce A17 Pro", "Caméra 48 Mpx", "USB-C"],
     specs: [
@@ -36,7 +36,7 @@ window.IBMAX_PRODUCTS = [
     badge: "Recond.",
     featured: true,
     priceTier: 2,
-    images: ["images/phone1.jpg"],
+    images: ["images/catalogue-phones/apple/iphone-11-pro.jpg"],
     tagline: "Triple caméra et écran OLED, testé point par point.",
     chips: ["OLED 5,8″", "Triple caméra", "Face ID"],
     specs: [
@@ -141,7 +141,7 @@ window.IBMAX_PRODUCTS = [
     cat: "Power banks",
     cond: "Neuf",
     badge: "Grande capacité",
-    images: ["images/crops/powerbank-noir.jpg", "images/crops/macbook-airpods.jpg"],
+    images: ["images/crops/powerbank-noir.jpg"],
     tagline: "Plusieurs recharges complètes, pour tenir plusieurs jours.",
     chips: ["20 000 mAh", "2 sorties USB", "Indicateur LED"],
     specs: [
@@ -245,7 +245,7 @@ window.IBMAX_PRODUCTS = [
     cond: "Neuf",
     badge: "Pack",
     featured: true,
-    images: ["images/ibmax-accessories.jpg", "images/ibmax-hero.jpg"],
+    images: ["images/ibmax-accessories.jpg"],
     tagline: "Power bank, audio et câble : l’équipement complet.",
     chips: ["Power bank", "Audio sans fil", "Câble USB-C"],
     specs: [
@@ -254,6 +254,224 @@ window.IBMAX_PRODUCTS = [
       ["Usage", "Tous les jours, voyage, bureau"],
       ["Composition", "Modulable selon votre budget"],
       ["Conseil", "Demandez-nous de composer votre pack"]
+    ]
+  },
+
+
+  /* ───────── SMARTPHONES APPLE (iPhone 18 → 14) ───────── */
+  {
+    "id": "catalogue-iphone-18",
+    "name": "iPhone 18 Pro",
+    "cat": "Smartphones",
+    "cond": "Neuf / selon stock",
+    "badge": "Apple",
+    "featured": false,
+    "images": [
+      "images/catalogue-phones/apple/iphone-18-pro.jpg"
+    ],
+    "tagline": "iPhone 18 Pro — visuel produit Apple, disponibilité à confirmer.",
+    "chips": [
+      "Écran Super Retina XDR",
+      "Puce Apple A20 Pro",
+      "Caméra pro avancée"
+    ],
+    "specs": [
+      [
+        "Écran",
+        "Super Retina XDR OLED, selon version"
+      ],
+      [
+        "Processeur",
+        "Puce Apple A20 Pro"
+      ],
+      [
+        "Photo",
+        "Système caméra pro (principal + ultra grand-angle + téléobjectif)"
+      ],
+      [
+        "Batterie",
+        "Autonomie journée complète, recharge rapide"
+      ],
+      [
+        "Connectivité / fonctions",
+        "5G, USB-C, Face ID, stockage selon version"
+      ],
+      [
+        "Disponibilité",
+        "À confirmer avec IB MAX selon le stock"
+      ]
+    ]
+  },
+  {
+    "id": "catalogue-iphone-17",
+    "name": "iPhone 17",
+    "cat": "Smartphones",
+    "cond": "Neuf / selon stock",
+    "badge": "Apple",
+    "featured": false,
+    "images": [
+      "images/catalogue-phones/apple/iphone-17.jpg"
+    ],
+    "tagline": "iPhone 17 — visuel produit Apple, disponibilité à confirmer.",
+    "chips": [
+      "Écran Super Retina XDR",
+      "Puce Apple A19, selon version",
+      "Caméra 48 Mpx +"
+    ],
+    "specs": [
+      [
+        "Écran",
+        "Super Retina XDR OLED, selon version"
+      ],
+      [
+        "Processeur",
+        "Puce Apple A19, selon version"
+      ],
+      [
+        "Photo",
+        "Caméra principale 48 Mpx + ultra grand-angle"
+      ],
+      [
+        "Batterie",
+        "Autonomie journée complète"
+      ],
+      [
+        "Connectivité / fonctions",
+        "5G, USB-C, Face ID, stockage selon version"
+      ],
+      [
+        "Disponibilité",
+        "À confirmer avec IB MAX selon le stock"
+      ]
+    ]
+  },
+  {
+    "id": "catalogue-iphone-16",
+    "name": "iPhone 16",
+    "cat": "Smartphones",
+    "cond": "Neuf / selon stock",
+    "badge": "Apple",
+    "featured": false,
+    "images": [
+      "images/catalogue-phones/apple/iphone-16.jpg"
+    ],
+    "tagline": "iPhone 16 — fiche technique indicative, sans prix affiché.",
+    "chips": [
+      "Écran Super Retina XDR 6,1″",
+      "Puce Apple A18",
+      "Caméra 48 Mpx"
+    ],
+    "specs": [
+      [
+        "Écran",
+        "Super Retina XDR OLED 6,1″ (selon version)"
+      ],
+      [
+        "Processeur",
+        "Puce Apple A18"
+      ],
+      [
+        "Photo",
+        "Caméra principale 48 Mpx + ultra grand-angle"
+      ],
+      [
+        "Batterie",
+        "Autonomie journée complète, MagSafe / USB-C"
+      ],
+      [
+        "Connectivité / fonctions",
+        "5G, USB-C, Face ID, bouton Action, stockage selon version"
+      ],
+      [
+        "Disponibilité",
+        "À confirmer avec IB MAX selon le stock"
+      ]
+    ]
+  },
+  {
+    "id": "catalogue-iphone-15",
+    "name": "iPhone 15",
+    "cat": "Smartphones",
+    "cond": "Neuf / selon stock",
+    "badge": "Apple",
+    "featured": false,
+    "images": [
+      "images/catalogue-phones/apple/iphone-15.jpg"
+    ],
+    "tagline": "iPhone 15 — fiche technique indicative, sans prix affiché.",
+    "chips": [
+      "Écran Super Retina XDR 6,1″",
+      "Puce Apple A16 Bionic",
+      "Caméra 48 Mpx, USB-C"
+    ],
+    "specs": [
+      [
+        "Écran",
+        "Super Retina XDR OLED 6,1″"
+      ],
+      [
+        "Processeur",
+        "Puce Apple A16 Bionic"
+      ],
+      [
+        "Photo",
+        "Caméra principale 48 Mpx + ultra grand-angle 12 Mpx"
+      ],
+      [
+        "Batterie",
+        "Autonomie journée complète"
+      ],
+      [
+        "Connectivité / fonctions",
+        "5G, USB-C, Face ID, Dynamic Island, stockage 128/256/512 Go"
+      ],
+      [
+        "Disponibilité",
+        "À confirmer avec IB MAX selon le stock"
+      ]
+    ]
+  },
+  {
+    "id": "catalogue-iphone-14",
+    "name": "iPhone 14",
+    "cat": "Smartphones",
+    "cond": "Neuf / selon stock",
+    "badge": "Apple",
+    "featured": false,
+    "images": [
+      "images/catalogue-phones/apple/iphone-14.jpg"
+    ],
+    "tagline": "iPhone 14 — fiche technique indicative, sans prix affiché.",
+    "chips": [
+      "Écran Super Retina XDR 6,1″",
+      "Puce Apple A15 Bionic",
+      "Double caméra 12 Mpx"
+    ],
+    "specs": [
+      [
+        "Écran",
+        "Super Retina XDR OLED 6,1″"
+      ],
+      [
+        "Processeur",
+        "Puce Apple A15 Bionic"
+      ],
+      [
+        "Photo",
+        "Double caméra 12 Mpx (principal + ultra grand-angle)"
+      ],
+      [
+        "Batterie",
+        "Autonomie journée complète"
+      ],
+      [
+        "Connectivité / fonctions",
+        "5G, Lightning, Face ID, Crash Detection, stockage 128/256 Go"
+      ],
+      [
+        "Disponibilité",
+        "À confirmer avec IB MAX selon le stock"
+      ]
     ]
   },
 
