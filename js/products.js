@@ -29,12 +29,11 @@ window.IBMAX_PRODUCTS = [
   },
   {
     id: "iphone-11-pro",
-    deal: "Reconditionné à saisir",
     name: "iPhone 11 Pro",
     cat: "Smartphones",
     cond: "Reconditionné",
     badge: "Recond.",
-    featured: true,
+    featured: false,
     priceTier: 2,
     images: ["images/catalogue-phones/apple/iphone-11-pro.jpg"],
     tagline: "Triple caméra et écran OLED, testé point par point.",
@@ -120,7 +119,7 @@ window.IBMAX_PRODUCTS = [
     cat: "Power banks",
     cond: "Neuf",
     badge: "Autonomie +",
-    featured: true,
+    featured: false,
     images: ["images/powerbank1.jpg"],
     tagline: "Boîtier métal compact, la batterie qui ne vous lâche pas.",
     chips: ["10 000 mAh", "USB-C", "Boîtier métal"],
@@ -136,7 +135,6 @@ window.IBMAX_PRODUCTS = [
   },
   {
     id: "power-bank-20000",
-    deal: "Offre pack",
     name: "Power bank 20 000 mAh",
     cat: "Power banks",
     cond: "Neuf",
@@ -162,7 +160,7 @@ window.IBMAX_PRODUCTS = [
     cat: "Audio",
     cond: "Neuf",
     badge: "Nouveau",
-    featured: true,
+    featured: false,
     images: ["images/crops/casque-noir.jpg", "images/crops/casque-jaune.jpg", "images/headphones1.jpg"],
     tagline: "Coussinets confortables, son riche, micro intégré.",
     chips: ["Bluetooth", "Micro intégré", "Pliable"],
@@ -178,7 +176,6 @@ window.IBMAX_PRODUCTS = [
   },
   {
     id: "ecouteurs-true-wireless",
-    deal: "Bon plan",
     name: "Écouteurs True Wireless",
     cat: "Audio",
     cond: "Neuf",
@@ -224,7 +221,7 @@ window.IBMAX_PRODUCTS = [
     cat: "Accessoires",
     cond: "Neuf",
     badge: "Essentiel",
-    featured: true,
+    featured: false,
     images: ["images/crops/cable-usbc.jpg"],
     tagline: "Nylon tressé, résistant aux plis et aux tractions.",
     chips: ["USB-A vers USB-C", "Nylon tressé", "Charge + données"],
@@ -239,12 +236,11 @@ window.IBMAX_PRODUCTS = [
   },
   {
     id: "pack-accessoires",
-    deal: "Pack à prix réduit",
     name: "Pack accessoires essentiels",
     cat: "Accessoires",
     cond: "Neuf",
     badge: "Pack",
-    featured: true,
+    featured: false,
     images: ["images/ibmax-accessories.jpg"],
     tagline: "Power bank, audio et câble : l’équipement complet.",
     chips: ["Power bank", "Audio sans fil", "Câble USB-C"],
@@ -265,7 +261,8 @@ window.IBMAX_PRODUCTS = [
     "cat": "Smartphones",
     "cond": "Neuf / selon stock",
     "badge": "Apple",
-    "featured": false,
+    "deal": "Nouveau",
+    "featured": true,
     "images": [
       "images/catalogue-phones/apple/iphone-18-pro.jpg"
     ],
@@ -697,7 +694,8 @@ window.IBMAX_PRODUCTS = [
     "cat": "Smartphones",
     "cond": "Neuf / selon stock",
     "badge": "Samsung",
-    "featured": false,
+    "deal": "Nouveau",
+    "featured": true,
     "images": [
       "images/catalogue-phones/06-z fold 8.jpg"
     ],
@@ -869,7 +867,8 @@ window.IBMAX_PRODUCTS = [
     "cat": "Smartphones",
     "cond": "Neuf / selon stock",
     "badge": "Samsung",
-    "featured": false,
+    "deal": "Nouveau",
+    "featured": true,
     "images": [
       "images/catalogue-phones/10-s26-ultra.jpg"
     ],
@@ -1041,7 +1040,8 @@ window.IBMAX_PRODUCTS = [
     "cat": "Smartphones",
     "cond": "Neuf / selon stock",
     "badge": "Samsung",
-    "featured": false,
+    "deal": "Nouveau",
+    "featured": true,
     "images": [
       "images/catalogue-phones/14-z-flip-8.jpg"
     ],
@@ -1213,7 +1213,8 @@ window.IBMAX_PRODUCTS = [
     "cat": "Smartphones",
     "cond": "Neuf / selon stock",
     "badge": "Google Pixel",
-    "featured": false,
+    "deal": "Nouveau",
+    "featured": true,
     "images": [
       "images/catalogue-phones/20-pixel-11-pro-xl.jpg"
     ],
@@ -1514,7 +1515,8 @@ window.IBMAX_PRODUCTS = [
     "cat": "Smartphones",
     "cond": "Neuf / selon stock",
     "badge": "Xiaomi",
-    "featured": false,
+    "deal": "Nouveau",
+    "featured": true,
     "images": [
       "images/catalogue-phones/27-xiaomi-18-pro-max.jpg"
     ],
