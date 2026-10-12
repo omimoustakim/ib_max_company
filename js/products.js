@@ -27,34 +27,13 @@ window.IBMAX_PRODUCTS = [
       ["Finition", "Titane (plusieurs coloris)"]
     ]
   },
-  {
-    id: "iphone-11-pro",
-    name: "iPhone 11 Pro",
-    cat: "Smartphones",
-    cond: "Reconditionné",
-    badge: "Recond.",
-    featured: false,
-    priceTier: 2,
-    images: ["images/catalogue-phones/apple/iphone-11-pro.jpg"],
-    tagline: "Triple caméra et écran OLED, testé point par point.",
-    chips: ["OLED 5,8″", "Triple caméra", "Face ID"],
-    specs: [
-      ["Écran", "5,8″ Super Retina XDR (OLED)"],
-      ["Processeur", "Apple A13 Bionic"],
-      ["Stockage", "64 / 256 Go"],
-      ["Caméra arrière", "Triple 12 Mpx"],
-      ["Étanchéité", "IP68"],
-      ["Sécurité", "Face ID"],
-      ["État", "Reconditionné, batterie contrôlée"]
-    ]
-  },
 
   /* ───────── ORDINATEURS ───────── */
   {
     id: "macbook-pro-13",
     name: "MacBook Pro 13″",
     cat: "Ordinateurs",
-    cond: "Neuf / Reconditionné",
+    cond: "Neuf",
     badge: "Pro",
     featured: true,
     images: ["images/laptop1.jpg", "images/crops/macbook-bureau.jpg"],
@@ -67,14 +46,14 @@ window.IBMAX_PRODUCTS = [
       ["Clavier", "Rétroéclairé"],
       ["Système", "macOS"],
       ["Autonomie", "Journée de travail"],
-      ["État", "Neuf ou reconditionné selon stock"]
+      ["État", "Neuf"]
     ]
   },
   {
     id: "macbook-air-13",
     name: "MacBook Air 13″",
     cat: "Ordinateurs",
-    cond: "Neuf / Reconditionné",
+    cond: "Neuf",
     badge: "Léger",
     images: ["images/crops/macbook-airpods.jpg"],
     tagline: "Fin, silencieux, parfait pour les déplacements.",
@@ -86,7 +65,7 @@ window.IBMAX_PRODUCTS = [
       ["Poids", "Format ultraportable"],
       ["Système", "macOS"],
       ["Refroidissement", "Sans ventilateur (selon version)"],
-      ["État", "Neuf ou reconditionné selon stock"]
+      ["État", "Neuf"]
     ]
   },
 
@@ -95,7 +74,7 @@ window.IBMAX_PRODUCTS = [
     id: "ipad-pro-11",
     name: "iPad Pro 11″",
     cat: "Tablettes",
-    cond: "Reconditionné",
+    cond: "Neuf",
     badge: "Créatif",
     featured: true,
     images: ["images/tablet1.jpg", "images/crops/ipad-stylet.jpg"],
@@ -108,7 +87,86 @@ window.IBMAX_PRODUCTS = [
       ["Sécurité", "Face ID"],
       ["Accessoires", "Apple Pencil compatible"],
       ["Usage", "Études, dessin, vidéo, travail"],
-      ["État", "Reconditionné, testé avant vente"]
+      ["État", "Testé avant vente"]
+    ]
+  },
+
+
+  {
+    id: "ipad-air-11",
+    name: "iPad Air 11″",
+    cat: "Tablettes",
+    cond: "Neuf",
+    badge: "Air",
+    featured: true,
+    images: ["images/crops/ipad-stylet.jpg", "images/tablet1.jpg"],
+    tagline: "Léger, puissant, parfait pour les études et le quotidien.",
+    chips: ["Écran Liquid Retina", "Puce Apple", "USB-C"],
+    specs: [
+      ["Écran", "11″ Liquid Retina"],
+      ["Processeur", "Puce Apple (selon version)"],
+      ["Stockage", "128 / 256 / 512 Go"],
+      ["Connectique", "USB-C"],
+      ["Accessoires", "Apple Pencil compatible"],
+      ["État", "Neuf"]
+    ]
+  },
+  {
+    id: "ipad-pro-13",
+    name: "iPad Pro 13″",
+    cat: "Tablettes",
+    cond: "Neuf",
+    badge: "Pro",
+    featured: true,
+    images: ["images/tablet1.jpg", "images/crops/ipad-stylet.jpg"],
+    tagline: "Grand écran OLED / Liquid, idéal création et productivité.",
+    chips: ["Grand format 13″", "ProMotion", "Stylet pro"],
+    specs: [
+      ["Écran", "13″ haute définition"],
+      ["Processeur", "Puce Apple M-series (selon version)"],
+      ["Stockage", "256 / 512 Go / 1 To"],
+      ["Connectique", "USB-C / Thunderbolt"],
+      ["Accessoires", "Apple Pencil Pro compatible"],
+      ["État", "Neuf"]
+    ]
+  },
+  {
+    id: "macbook-pro-14",
+    name: "MacBook Pro 14″",
+    cat: "Ordinateurs",
+    cond: "Neuf",
+    badge: "Pro",
+    featured: true,
+    deal: "Nouveau",
+    images: ["images/laptop1.jpg", "images/crops/macbook-bureau.jpg"],
+    tagline: "Puce M-series, écran Liquid Retina XDR, pour les pros.",
+    chips: ["Écran 14″ XDR", "Puce Apple M", "SSD ultra-rapide"],
+    specs: [
+      ["Écran", "14″ Liquid Retina XDR"],
+      ["Processeur", "Apple M-series (selon version)"],
+      ["Mémoire", "16 / 32 Go selon version"],
+      ["Stockage", "SSD 512 Go / 1 To"],
+      ["Ports", "Thunderbolt, HDMI, MagSafe"],
+      ["État", "Neuf"]
+    ]
+  },
+  {
+    id: "macbook-air-15",
+    name: "MacBook Air 15″",
+    cat: "Ordinateurs",
+    cond: "Neuf",
+    badge: "Air",
+    featured: true,
+    images: ["images/crops/macbook-airpods.jpg", "images/laptop1.jpg"],
+    tagline: "Grand écran, ultra-fin et silencieux pour le quotidien.",
+    chips: ["Écran 15″ Liquid Retina", "Ultra-fin", "Autonomie longue"],
+    specs: [
+      ["Écran", "15″ Liquid Retina"],
+      ["Processeur", "Apple M-series (selon version)"],
+      ["Mémoire", "8 / 16 Go selon version"],
+      ["Stockage", "SSD 256 / 512 Go"],
+      ["Poids", "Format ultraportable"],
+      ["État", "Neuf"]
     ]
   },
 
@@ -259,7 +317,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-iphone-18",
     "name": "iPhone 18 Pro",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Apple",
     "deal": "Nouveau",
     "featured": true,
@@ -303,7 +361,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-iphone-17",
     "name": "iPhone 17",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Apple",
     "featured": false,
     "images": [
@@ -343,29 +401,30 @@ window.IBMAX_PRODUCTS = [
     ]
   },
   {
-    "id": "catalogue-iphone-16",
-    "name": "iPhone 16",
+    "id": "catalogue-iphone-16-pro-max",
+    "name": "iPhone 16 Pro Max",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Apple",
-    "featured": false,
+    "deal": "Nouveau",
+    "featured": true,
     "images": [
-      "images/catalogue-phones/apple/iphone-16.jpg"
+      "images/catalogue-phones/apple/iphone-16-pro-max.jpg"
     ],
-    "tagline": "iPhone 16 — fiche technique indicative, sans prix affiché.",
+    "tagline": "iPhone 16 Pro Max — écran 6,9″, titane, A18 Pro, caméra pro.",
     "chips": [
-      "Écran Super Retina XDR 6,1″",
-      "Puce Apple A18",
-      "Caméra 48 Mpx"
+      "Écran Super Retina XDR 6,9″",
+      "Puce Apple A18 Pro",
+      "Caméra 48 Mpx pro"
     ],
     "specs": [
       [
         "Écran",
-        "Super Retina XDR OLED 6,1″ (selon version)"
+        "Super Retina XDR OLED 6,9″"
       ],
       [
         "Processeur",
-        "Puce Apple A18"
+        "Puce Apple A18 Pro"
       ],
       [
         "Photo",
@@ -389,7 +448,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-iphone-15",
     "name": "iPhone 15",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Apple",
     "featured": false,
     "images": [
@@ -429,33 +488,33 @@ window.IBMAX_PRODUCTS = [
     ]
   },
   {
-    "id": "catalogue-iphone-14",
-    "name": "iPhone 14",
+    "id": "catalogue-iphone-14-pro-max",
+    "name": "iPhone 14 Pro Max",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Apple",
-    "featured": false,
+    "featured": true,
     "images": [
-      "images/catalogue-phones/apple/iphone-14.jpg"
+      "images/catalogue-phones/apple/iphone-14-pro-max.jpg"
     ],
-    "tagline": "iPhone 14 — fiche technique indicative, sans prix affiché.",
+    "tagline": "iPhone 14 Pro Max — Dynamic Island, A16 Bionic, caméra 48 Mpx.",
     "chips": [
-      "Écran Super Retina XDR 6,1″",
-      "Puce Apple A15 Bionic",
-      "Double caméra 12 Mpx"
+      "Écran Super Retina XDR 6,7″",
+      "Puce Apple A16 Bionic",
+      "Caméra 48 Mpx pro"
     ],
     "specs": [
       [
         "Écran",
-        "Super Retina XDR OLED 6,1″"
+        "Super Retina XDR OLED 6,7″"
       ],
       [
         "Processeur",
-        "Puce Apple A15 Bionic"
+        "Puce Apple A16 Bionic"
       ],
       [
         "Photo",
-        "Double caméra 12 Mpx (principal + ultra grand-angle)"
+        "Caméra 48 Mpx pro + ultra grand-angle + téléobjectif"
       ],
       [
         "Batterie",
@@ -477,7 +536,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-samsung-1",
     "name": "Samsung Galaxy A56",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Samsung",
     "featured": false,
     "images": [
@@ -520,7 +579,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-samsung-2",
     "name": "Samsung Galaxy A56",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Samsung",
     "featured": false,
     "images": [
@@ -563,7 +622,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-samsung-3",
     "name": "Samsung Galaxy A54",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Samsung",
     "featured": false,
     "images": [
@@ -606,7 +665,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-samsung-4",
     "name": "Samsung Galaxy A17",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Samsung",
     "featured": false,
     "images": [
@@ -649,7 +708,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-samsung-5",
     "name": "Samsung Galaxy A16",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Samsung",
     "featured": false,
     "images": [
@@ -692,7 +751,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-samsung-6",
     "name": "Samsung Galaxy Z Fold 8",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Samsung",
     "deal": "Nouveau",
     "featured": true,
@@ -736,7 +795,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-samsung-7",
     "name": "Samsung Galaxy Z Fold 7",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Samsung",
     "featured": false,
     "images": [
@@ -779,7 +838,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-samsung-8",
     "name": "Samsung Galaxy Z Fold 6",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Samsung",
     "featured": false,
     "images": [
@@ -822,7 +881,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-samsung-9",
     "name": "Samsung Galaxy Z Fold 5",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Samsung",
     "featured": false,
     "images": [
@@ -865,7 +924,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-samsung-10",
     "name": "Samsung Galaxy S26 Ultra",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Samsung",
     "deal": "Nouveau",
     "featured": true,
@@ -909,7 +968,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-samsung-11",
     "name": "Samsung Galaxy S25 Ultra",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Samsung",
     "featured": false,
     "images": [
@@ -952,7 +1011,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-samsung-12",
     "name": "Samsung Galaxy S24 Ultra",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Samsung",
     "featured": false,
     "images": [
@@ -995,7 +1054,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-samsung-13",
     "name": "Samsung Galaxy S23 Ultra",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Samsung",
     "featured": false,
     "images": [
@@ -1038,7 +1097,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-samsung-14",
     "name": "Samsung Galaxy Z Flip 8",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Samsung",
     "deal": "Nouveau",
     "featured": true,
@@ -1082,7 +1141,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-samsung-15",
     "name": "Samsung Galaxy Z Flip 7",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Samsung",
     "featured": false,
     "images": [
@@ -1125,7 +1184,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-samsung-16",
     "name": "Samsung Galaxy Z Flip 6",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Samsung",
     "featured": false,
     "images": [
@@ -1168,7 +1227,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-samsung-17",
     "name": "Samsung Galaxy Z Flip 5",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Samsung",
     "featured": false,
     "images": [
@@ -1211,7 +1270,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-google-pixel-20",
     "name": "Google Pixel 11 Pro XL",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Google Pixel",
     "deal": "Nouveau",
     "featured": true,
@@ -1255,7 +1314,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-google-pixel-21",
     "name": "Google Pixel 10 Pro XL",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Google Pixel",
     "featured": false,
     "images": [
@@ -1298,7 +1357,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-google-pixel-22",
     "name": "Google Pixel 9 Pro XL",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Google Pixel",
     "featured": false,
     "images": [
@@ -1341,7 +1400,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-google-pixel-23",
     "name": "Google Pixel 8 Pro XL",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Google Pixel",
     "featured": false,
     "images": [
@@ -1384,7 +1443,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-google-pixel-24",
     "name": "Google Pixel 7 Pro XL",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Google Pixel",
     "featured": false,
     "images": [
@@ -1427,7 +1486,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-xiaomi-25",
     "name": "Xiaomi 17 Ultra",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Xiaomi",
     "featured": false,
     "images": [
@@ -1470,7 +1529,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-xiaomi-26",
     "name": "Xiaomi 17 Pro Max",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Xiaomi",
     "featured": false,
     "images": [
@@ -1513,7 +1572,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-xiaomi-27",
     "name": "Xiaomi 18 Pro Max",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Xiaomi",
     "deal": "Nouveau",
     "featured": true,
@@ -1557,7 +1616,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-xiaomi-28",
     "name": "Xiaomi Mi 11 Ultra",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Xiaomi",
     "featured": false,
     "images": [
@@ -1600,7 +1659,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-honor-29",
     "name": "HONOR Magic 9 Pro Max",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Honor",
     "featured": false,
     "images": [
@@ -1643,7 +1702,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-honor-30",
     "name": "HONOR 600 Pro",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Honor",
     "featured": false,
     "images": [
@@ -1686,7 +1745,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-honor-31",
     "name": "HONOR Magic8 Pro",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Honor",
     "featured": false,
     "images": [
@@ -1729,7 +1788,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-honor-32",
     "name": "HONOR 600",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Honor",
     "featured": false,
     "images": [
@@ -1772,7 +1831,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-honor-33",
     "name": "HONOR 400",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Honor",
     "featured": false,
     "images": [
@@ -1815,7 +1874,7 @@ window.IBMAX_PRODUCTS = [
     "id": "catalogue-honor-34",
     "name": "HONOR 400 Pro",
     "cat": "Smartphones",
-    "cond": "Neuf / selon stock",
+    "cond": "Neuf",
     "badge": "Honor",
     "featured": false,
     "images": [
