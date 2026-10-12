@@ -1913,4 +1913,164 @@ window.IBMAX_PRODUCTS = [
       ]
     ]
   }
+,
+{
+    "id": "catalogue-iphone-17-pro-max",
+    "name": "iPhone 17 Pro Max",
+    "cat": "Smartphones",
+    "cond": "Neuf",
+    "badge": "Pro Max",
+    "featured": true,
+    "images": [
+      "images/catalogue-phones/apple/iphone-17-pro-max.jpg"
+    ],
+    "tagline": "iPhone 17 Pro Max — design aluminium unibody, A19 Pro, système photo Fusion 48 Mpx, écran 6,9″.",
+    "chips": [
+      "A19 Pro",
+      "Écran 6,9″ Super Retina XDR",
+      "Caméras 48 Mpx Fusion"
+    ],
+    "specs": [
+      ["Écran", "6,9″ Super Retina XDR OLED, ProMotion 120 Hz"],
+      ["Processeur", "Apple A19 Pro"],
+      ["Stockage", "256 / 512 Go / 1 To / 2 To"],
+      ["Caméra arrière", "Triple 48 Mpx Fusion (Main, Ultra Wide, Téléobjectif)"],
+      ["Connectique", "USB-C"],
+      ["Sécurité", "Face ID"],
+      ["Finition", "Aluminium unibody (Deep Blue, Cosmic Orange, Silver)"],
+      ["Disponibilité", "À confirmer avec IB MAX selon le stock"]
+    ]
+  },
+  {
+    "id": "catalogue-iphone-15-pro-max",
+    "name": "iPhone 15 Pro Max",
+    "cat": "Smartphones",
+    "cond": "Neuf",
+    "badge": "Pro Max",
+    "featured": true,
+    "images": [
+      "images/catalogue-phones/apple/iphone-15-pro-max.jpg"
+    ],
+    "tagline": "iPhone 15 Pro Max — titane, A17 Pro, zoom optique 5x, USB-C.",
+    "chips": [
+      "Titane",
+      "A17 Pro",
+      "Zoom optique 5x"
+    ],
+    "specs": [
+      ["Écran", "6,7″ Super Retina XDR OLED, ProMotion 120 Hz"],
+      ["Processeur", "Apple A17 Pro"],
+      ["Stockage", "256 / 512 Go / 1 To"],
+      ["Caméra arrière", "Triple 48 Mpx + téléobjectif 5x + LiDAR"],
+      ["Connectique", "USB-C"],
+      ["Sécurité", "Face ID"],
+      ["Finition", "Titane (Black, White, Blue, Natural)"],
+      ["Disponibilité", "À confirmer avec IB MAX selon le stock"]
+    ]
+  },
+  {
+    "id": "catalogue-iphone-13",
+    "name": "iPhone 13",
+    "cat": "Smartphones",
+    "cond": "Neuf",
+    "badge": "Classique",
+    "featured": false,
+    "images": [
+      "images/catalogue-phones/apple/iphone-13.jpg"
+    ],
+    "tagline": "iPhone 13 — design plat, double caméra 12 Mpx, A15 Bionic, excellent rapport qualité-prix.",
+    "chips": [
+      "A15 Bionic",
+      "Double caméra 12 Mpx",
+      "Ceramic Shield"
+    ],
+    "specs": [
+      ["Écran", "6,1″ Super Retina XDR OLED"],
+      ["Processeur", "Apple A15 Bionic"],
+      ["Stockage", "128 / 256 / 512 Go"],
+      ["Caméra arrière", "Double 12 Mpx (grand-angle + ultra grand-angle)"],
+      ["Connectique", "Lightning"],
+      ["Sécurité", "Face ID"],
+      ["Finition", "Plusieurs coloris (Midnight, Starlight, Blue, Pink, Red, Green)"],
+      ["Disponibilité", "À confirmer avec IB MAX selon le stock"]
+    ]
+  },
+  {
+    "id": "catalogue-samsung-z-fold-8-ultra",
+    "name": "Samsung Galaxy Z Fold 8 Ultra",
+    "cat": "Smartphones",
+    "cond": "Neuf",
+    "badge": "Samsung",
+    "featured": true,
+    "images": [
+      "images/catalogue-phones/35-z-fold-8-ultra.jpg"
+    ],
+    "tagline": "Samsung Galaxy Z Fold 8 Ultra — écran pliable 8″, caméra 200 Mpx, Snapdragon 8 Elite Gen 5.",
+    "chips": [
+      "Écran pliable 8″",
+      "Caméra 200 Mpx",
+      "Batterie 5000 mAh"
+    ],
+    "specs": [
+      ["Écran principal", "8,0″ Dynamic AMOLED 2X, 120 Hz"],
+      ["Écran couverture", "6,5″ Dynamic AMOLED 2X"],
+      ["Processeur", "Snapdragon 8 Elite Gen 5"],
+      ["Photo", "200 Mpx principal + 50 Mpx ultra-wide + téléobjectif"],
+      ["Batterie", "5000 mAh, recharge 45W"],
+      ["OS", "Android 17, One UI 9"],
+      ["Disponibilité", "À confirmer avec IB MAX selon le stock"]
+    ]
+  },
+  {
+    "id": "catalogue-xiaomi-18-pro",
+    "name": "Xiaomi 18 Pro",
+    "cat": "Smartphones",
+    "cond": "Neuf",
+    "badge": "Xiaomi",
+    "featured": true,
+    "images": [
+      "images/catalogue-phones/xiaomi-18-pro.jpg"
+    ],
+    "tagline": "Xiaomi 18 Pro — écran 6,4″, Snapdragon 8 Elite Gen 6, batterie 7000 mAh, caméras Leica.",
+    "chips": [
+      "Snapdragon 8 Elite Gen 6",
+      "Batterie 7000 mAh",
+      "Caméras Leica"
+    ],
+    "specs": [
+      ["Écran", "6,4″ AMOLED 120 Hz, 4000 nits"],
+      ["Processeur", "Snapdragon 8 Elite Gen 6"],
+      ["Stockage", "12/16 Go RAM, 256 Go à 1 To"],
+      ["Photo", "Leica 200 Mpx principal + téléobjectif + ultra-wide"],
+      ["Batterie", "7000 mAh, 100W filaire / 50W sans fil"],
+      ["OS", "HyperOS 4 (Android 17)"],
+      ["Disponibilité", "À confirmer avec IB MAX selon le stock"]
+    ]
+  },
+  {
+    "id": "catalogue-motorola-razr-50",
+    "name": "Motorola Razr 50",
+    "cat": "Smartphones",
+    "cond": "Neuf",
+    "badge": "Motorola",
+    "featured": false,
+    "images": [
+      "images/catalogue-phones/motorola-razr-50.jpg"
+    ],
+    "tagline": "Motorola Razr 50 — flip pliable élégant, grand écran externe, design premium.",
+    "chips": [
+      "Flip pliable",
+      "Grand écran externe",
+      "Design premium"
+    ],
+    "specs": [
+      ["Écran principal", "6,9″ pliable AMOLED"],
+      ["Écran externe", "Grand écran couverture"],
+      ["Processeur", "Snapdragon (selon version)"],
+      ["Photo", "Système caméra multi-objectifs"],
+      ["Batterie", "Grande capacité avec recharge rapide"],
+      ["OS", "Android"],
+      ["Disponibilité", "À confirmer avec IB MAX selon le stock"]
+    ]
+  }
 ];

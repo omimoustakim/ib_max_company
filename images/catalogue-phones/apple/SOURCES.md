@@ -13,3 +13,12 @@ Les fichiers ci-dessous remplacent des visuels génériques précédemment assoc
 | `iphone-11-pro.jpg` | iPhone 11 Pro | Visuel produit identifié dans un résultat Amazon pour « Apple iPhone 11 Pro, Silver »; la photo montre les deux faces et le bloc caméra triple du modèle. |
 
 Les autres photos des produits non-Apple déjà présentes dans le projet ont été conservées et leurs références de modèles ont été vérifiées visuellement dans les fichiers `images/catalogue-phones/`.
+
+| `iphone-17-pro-max.jpg` | iPhone 17 Pro Max | Visuel produit GSMArena / Apple (annoncé 2025) |
+| `iphone-15-pro-max.jpg` | iPhone 15 Pro Max | Visuel produit GSMArena / Apple |
+| `iphone-13.jpg` | iPhone 13 | Visuel produit GSMArena / Apple |
+
+Autres ajouts hors Apple :
+- `xiaomi-18-pro.jpg` — Xiaomi 18 Pro (visuel officiel GSMArena)
+- `35-z-fold-8-ultra.jpg` — Samsung Galaxy Z Fold 8 Ultra (visuel GSMArena)
+- `motorola-razr-50.jpg` — Motorola Razr 50 (visuel GSMArena)
