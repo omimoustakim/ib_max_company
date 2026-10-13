@@ -3,6 +3,12 @@
 (function () {
   const whatsappBase = "https://wa.me/22890490908";
 
+  // ─── URL de l'API InfinityFree (base de données) ───
+  // Remplace par ton sous-domaine InfinityFree une fois créé.
+  // Exemple : "https://ibmax-db.infinityfreeapp.com"
+  // Laisse vide "" tant que l'API n'est pas en ligne → le site ouvre seulement WhatsApp.
+  const API_BASE = "";
+
   function waLink(msg) {
     return whatsappBase + "?text=" + encodeURIComponent(msg || "Bonjour IB MAX, je souhaite avoir des informations.");
   }
@@ -293,11 +299,11 @@
   }
   applyFilters();
 
-  /* ───────── Formulaire contact → WhatsApp (anti-spam) ───────── */
+  /* ───────── Formulaire contact → Base de données + WhatsApp ───────── */
   const contactForm = document.getElementById("contactForm");
   const RATE_LIMIT_KEY = 'ibmax_contact_ratelimit';
   const RATE_LIMIT_WINDOW = 10 * 60 * 1000; // 10 min
-  const RATE_LIMIT_MAX = 3; // max 3 submissions per window
+  const RATE_LIMIT_MAX = 3;
 
   function checkRateLimit() {
     const now = Date.now();
@@ -309,24 +315,94 @@
     return true;
   }
 
-  contactForm?.addEventListener("submit", (e) => {
+  async function submitDemande(payload) {
+    if (!API_BASE) throw new Error('API non configurée');
+    const res = await fetch(API_BASE.replace(/\/$/, '') + '/api/submit-demande.php', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    return res.json();
+  }
+
+  contactForm?.addEventListener("submit", async (e) => {
     e.preventDefault();
-    // Honeypot check
     const honeypot = document.getElementById("hp_website");
-    if (honeypot && honeypot.value) {
-      // Bot detected - silently fail (don't open WhatsApp)
-      console.warn('[Anti-spam] Honeypot triggered');
-      return;
-    }
-    // Rate limit check
+    if (honeypot && honeypot.value) return;
+
     if (!checkRateLimit()) {
       alert('Trop de tentatives. Merci de patienter quelques minutes avant de réessayer.');
       return;
     }
-    const name = document.getElementById("cName")?.value || "";
-    const phone = document.getElementById("cPhone")?.value || "";
-    const msg = document.getElementById("cMsg")?.value || "";
-    window.open(waLink("Bonjour IB MAX,\nNom: " + name + "\nTél: " + phone + "\nMessage: " + msg), "_blank");
+
+    const name = (document.getElementById("cName")?.value || "").trim();
+    const phone = (document.getElementById("cPhone")?.value || "").trim();
+    const msg = (document.getElementById("cMsg")?.value || "").trim();
+    const feedback = document.getElementById("contactFeedback");
+    const btn = document.getElementById("contactSubmitBtn");
+
+    if (!name || !phone || !msg) {
+      if (feedback) {
+        feedback.style.display = 'block';
+        feedback.style.color = '#e74c3c';
+        feedback.textContent = 'Nom, numéro WhatsApp et message sont obligatoires.';
+      }
+      return;
+    }
+
+    if (btn) {
+      btn.disabled = true;
+      btn.innerHTML = '<i class="bi bi-hourglass-split"></i> Envoi…';
+    }
+
+    const waMsg = "Bonjour IB MAX,\nNom: " + name + "\nTél: " + phone + "\nMessage: " + msg;
+
+    try {
+      // Si API_BASE est vide → on ouvre seulement WhatsApp (site vitrine sans backend)
+      if (!API_BASE) {
+        window.open(waLink(waMsg), "_blank");
+        if (feedback) {
+          feedback.style.display = 'block';
+          feedback.style.color = '#2ecc71';
+          feedback.textContent = 'Ouverture de WhatsApp…';
+        }
+        return;
+      }
+
+      const data = await submitDemande({
+        nom: name,
+        telephone: phone,
+        message: msg,
+        source: 'contact',
+        website: honeypot ? honeypot.value : ''
+      });
+
+      if (data.ok) {
+        if (feedback) {
+          feedback.style.display = 'block';
+          feedback.style.color = '#2ecc71';
+          feedback.innerHTML = 'Demande enregistrée ! <a href="' + (data.wa || waLink(waMsg)) + '" target="_blank" rel="noopener" style="color:#25d366;font-weight:600">Continuer sur WhatsApp →</a>';
+        }
+        contactForm.reset();
+        if (data.wa) window.open(data.wa, '_blank');
+      } else {
+        throw new Error(data.error || 'Erreur');
+      }
+    } catch (err) {
+      // Fallback WhatsApp si l'API échoue
+      if (feedback) {
+        feedback.style.display = 'block';
+        feedback.style.color = '#f39c12';
+        feedback.textContent = 'Enregistrement indisponible. Ouverture de WhatsApp…';
+      }
+      window.open(waLink(waMsg), "_blank");
+    } finally {
+      if (btn) {
+        btn.disabled = false;
+        btn.innerHTML = '<i class="bi bi-send"></i> Envoyer la demande';
+      }
+    }
   });
 
   /* ───────── Apparition au scroll ───────── */

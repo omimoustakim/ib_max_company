@@ -124,17 +124,23 @@
         </div>
         <div>
           <h2 style="font-family:var(--font-display);font-size:1.6rem;margin-bottom:0.4rem">Envoyer un message</h2>
-          <p style="color:var(--muted-foreground);margin-bottom:1.5rem">Le formulaire ouvre WhatsApp prérempli.</p>
+          <p style="color:var(--muted-foreground);margin-bottom:1.5rem">Indiquez votre numéro WhatsApp pour qu’on puisse vous répondre directement.</p>
           <form id="contactForm" novalidate>
-            <!-- Honeypot anti-spam (hidden via CSS) -->
+            <!-- Honeypot anti-spam -->
             <div class="form-group hp-field" aria-hidden="true" style="display:none;position:absolute;left:-9999px">
               <label for="hp_website">Ne remplissez pas ce champ</label>
               <input type="text" id="hp_website" name="website" tabindex="-1" autocomplete="off">
             </div>
-            <div class="form-group"><label for="cName">Nom</label><input type="text" id="cName" required placeholder="Votre nom"></div>
-            <div class="form-group"><label for="cPhone">Téléphone</label><input type="tel" id="cPhone" placeholder="90 XX XX XX"></div>
-            <div class="form-group"><label for="cMsg">Message</label><textarea id="cMsg" required placeholder="Décrivez votre besoin…"></textarea></div>
-            <button type="submit" class="button button-dark"><i class="bi bi-whatsapp"></i> Envoyer sur WhatsApp</button>
+            <div class="form-group"><label for="cName">Nom *</label><input type="text" id="cName" name="nom" required placeholder="Votre nom"></div>
+            <div class="form-group">
+              <label for="cPhone">Numéro WhatsApp *</label>
+              <input type="tel" id="cPhone" name="telephone" required placeholder="ex. 90 49 09 08" inputmode="tel" autocomplete="tel">
+            </div>
+            <div class="form-group"><label for="cMsg">Message *</label><textarea id="cMsg" name="message" required placeholder="Décrivez votre besoin (téléphone, disponibilité…)"></textarea></div>
+            <button type="submit" class="button button-dark" id="contactSubmitBtn">
+              <i class="bi bi-send"></i> Envoyer la demande
+            </button>
+            <p id="contactFeedback" style="margin-top:0.8rem;font-size:0.9rem;display:none"></p>
           </form>
         </div>
       </div>
