@@ -7,7 +7,7 @@
   // Remplace par ton sous-domaine InfinityFree une fois créé.
   // Exemple : "https://ibmax-db.infinityfreeapp.com"
   // Laisse vide "" tant que l'API n'est pas en ligne → le site ouvre seulement WhatsApp.
-  const API_BASE = "";
+  const API_BASE = "https://ibmaxcompany.gamer.gd";
 
   function waLink(msg) {
     return whatsappBase + "?text=" + encodeURIComponent(msg || "Bonjour IB MAX, je souhaite avoir des informations.");
